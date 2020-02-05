@@ -8,7 +8,7 @@ def stock_picker(prices)
   buy_index = 0
   sell_index = 1
 
-  while buy_index != prices.index(prices.last) - 1
+  while buy_index != prices.index(prices.last)
     buy_price = prices[buy_index]
 
     test_array = prices[sell_index..prices.last]
