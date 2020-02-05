@@ -4,6 +4,7 @@ def stock_picker(prices)
   best_buy = prices[0]
   best_sell = prices[1]
   best_profit = best_sell - best_buy
+  best_days = []
 
   buy_index = 0
   sell_index = 1
@@ -28,7 +29,9 @@ def stock_picker(prices)
     sell_index += 1
   end
 
-  return best_profit
+  best_days.push(prices.index(best_buy))
+  best_days.push(prices.index(best_sell))
+  return best_days
 end
 
 p stock_picker(stock_prices)
