@@ -16,6 +16,9 @@ def stock_picker(prices)
     profit = sell_price - buy_price
 
     if profit > best_profit
+      best_buy = buy_price
+      best_sell = sell_price
+      best_profit = profit
     end
 
     buy_index += 1
