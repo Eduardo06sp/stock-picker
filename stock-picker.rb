@@ -13,6 +13,8 @@ def stock_picker(prices)
     sell_price = prices[sell_index]
     profit = sell_price - buy_price
 
+    test_array = prices[sell_index..last]
+
     if profit > best_profit
       best_buy = buy_price
       best_sell = sell_price
