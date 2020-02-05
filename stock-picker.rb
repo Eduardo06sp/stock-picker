@@ -15,10 +15,12 @@ def stock_picker(prices)
 
     test_array = prices[sell_index..last]
 
-    if profit > best_profit
-      best_buy = buy_price
-      best_sell = sell_price
-      best_profit = profit
+    test_array.each do |test_sell|
+      if profit > best_profit
+        best_buy = buy_price
+        best_sell = sell_price
+        best_profit = profit
+      end
     end
 
     buy_index += 1
