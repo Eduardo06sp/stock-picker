@@ -5,10 +5,6 @@ def stock_picker(prices)
   best_sell = prices[1]
   best_profit = best_sell - best_buy
 
-  buy_price
-  sell_price
-  profit
-
   buy_index = 0
   sell_index = 1
 
