@@ -11,7 +11,7 @@ def stock_picker(prices)
   while buy_index != prices.index(prices.last) - 1
     buy_price = prices[buy_index]
 
-    test_array = prices[sell_index..last]
+    test_array = prices[sell_index..prices.last]
 
     test_array.each do |test_sell|
       sell_price = test_sell
