@@ -1,3 +1,5 @@
+stock_prices = [1,2,3,4]
+
 def stock_picker(prices)
   best_buy = prices[0]
   best_sell = prices[1]
@@ -25,3 +27,5 @@ def stock_picker(prices)
     sell_index += 1
   end
 end
+
+p stock_picker(stock_prices)
