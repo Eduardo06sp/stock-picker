@@ -11,6 +11,13 @@ def stock_picker(prices)
   sell_index = 1
 
   while buy_price != prices.last - 1
+    buy_price = prices[buy_index]
+    sell_price = prices[sell_index]
+    profit = sell_price - buy_price
+
+    if profit > best_profit
+    end
+
     buy_index += 1
     sell_index += 1
   end
